@@ -3,6 +3,9 @@ import { NavLink, Link } from 'react-router-dom'
 // import { TfiWorld, TfiSettings } from 'react-icons/tfi'
 import {TbWorld} from 'react-icons/tb'
 import { IoMdSettings } from 'react-icons/io'
+import { ReactComponent as SwapIcon } from '../../images/swap-icon.svg'
+import { ReactComponent as AirdropIcon } from '../../images/airdrop-icon.svg'
+import { ReactComponent as StakeIcon } from '../../images/stake-icon.svg'
 import './navbar.css'
 
 function Navbar() {
@@ -15,13 +18,16 @@ function Navbar() {
         </Link>
         <ul className='nav-list'>
           <NavLink className='nav-link' to={'/swap'}>
-            Swap
+            <SwapIcon className='link-icon' />
+            <span className='swap'>Swap</span>
           </NavLink>
           <NavLink className='nav-link' to={'/stake'}>
-            Stake
+            <StakeIcon className='link-icon' />
+            <span>Stake</span>
           </NavLink>
           <NavLink className='nav-link' to={'/airdrop'}>
-            Airdrop
+            <AirdropIcon  className='link-icon'/>
+            <span>Airdrop</span>
           </NavLink>
         </ul>
         <div className='nav-right'>

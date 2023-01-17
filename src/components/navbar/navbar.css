@@ -1,80 +1,116 @@
-.nav-wrapper{
- display: flex;
- align-items: center;
- width: 100%;
- padding: 10px 30px;
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px 30px;
+  background: #3f7327cf;
 }
 
-.nav-link{
- text-decoration: none;
- color: #BF6D0A;
+.nav-link {
+  text-decoration: none;
+  color: #bf6d0a;
 }
 
-.nav-right{
+.nav-right {
   margin-left: auto;
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #BF6D0A;
+  color: #bf6d0a;
 }
 
-.nav-right span{
- font-weight: 500;
+.nav-right span {
+  font-weight: 500;
 }
 
-.logo{
- text-decoration: none;
- margin-right: 40px;
- color: #F2BB13;
+.logo {
+  text-decoration: none;
+  margin-right: 40px;
+  color: #f2bb13;
 }
 
-.nav-list{
- display: flex;
- gap: 25px;
+.nav-list {
+  display: flex;
+  gap: 25px;
 }
 
-.connect{
- background: #F2BB13;
- text-decoration: none;
- display: inline-block;
- padding: 5px 10px;
- color: #ffff;
- border-radius: 8px;
+.connect {
+  background: #f2bb13;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #ffff;
+  border-radius: 8px;
 }
 
-.word-icon, .setting-icon{
- font-size: 20px;
+.word-icon,
+.setting-icon {
+  font-size: 20px;
 }
 
-.active{
- background: #F2BB13;
- color: #ffff;
- padding: 0 10px;
- border-radius: 20px;
+.active {
+  background: #f2bb13;
+  color: #ffff;
+  padding: 0 10px;
+  border-radius: 20px;
 }
 
+.link-icon {
+  display: none;
+}
 
 @media screen and (max-width: 835px) {
+  .nav-wrapper {
+    padding: 10px 10px;
+  }
 
- .nav-wrapper{
-  padding: 10px 10px;
- }
+  .logo {
+    margin-right: 15px;
+  }
 
- .logo{
-  margin-right: 15px;
- }
+  .nav-right {
+    gap: 5px;
+  }
 
- .nav-right{
-  gap: 5px;
- }
- 
- .nav-list{
-  position: absolute;
-  z-index: 1000;
-  justify-content: space-between;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 5px 20px;
- }
+  .nav-list {
+    position: absolute;
+    z-index: 1000;
+    justify-content: space-between;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 20px;
+  }
+
+  .link-icon {
+    display: block;
+    color: #bf6d0a;
+    
+  }
+
+  .nav-link{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 10px;
+   padding: 5px 0;
+  }
+
+  .link-icon path{
+   fill: #bf6d0a;
+  }
+
+  .nav-link span {
+   
+  }
+
+  .active{
+   background: transparent;
+   color:#f2bb13;
+   padding: 0;
+  }
+
+  .active .link-icon path{
+   fill: #f2bb13;
+  }
 }
