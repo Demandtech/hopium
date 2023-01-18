@@ -37,3 +37,13 @@
 .plus-icon{
  fill: aliceblue;
 }
+
+@media screen and (max-width: 480px) {
+   .liquidity-wrapper{
+    width: 100%;
+   }
+
+   .liquidity{
+    padding: 0px 15px
+   }
+}
