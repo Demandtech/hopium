@@ -1,11 +1,11 @@
 import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
-// import { TfiWorld, TfiSettings } from 'react-icons/tfi'
-import {TbWorld} from 'react-icons/tb'
-import { IoMdSettings } from 'react-icons/io'
 import { ReactComponent as SwapIcon } from '../../images/swap-icon.svg'
 import { ReactComponent as AirdropIcon } from '../../images/airdrop-icon.svg'
 import { ReactComponent as StakeIcon } from '../../images/stake-icon.svg'
+import { ReactComponent as WorldIcon } from '../../images/worldwide-icon.svg'
+import { ReactComponent as SettingIcon } from '../../images/setting-icon.svg'
+
 import './navbar.css'
 
 function Navbar() {
@@ -33,8 +33,8 @@ function Navbar() {
         <div className='nav-right'>
           {/* <img src='' alt='' /> */}
           <span>$0.000</span>
-          <TbWorld className='word-icon' />
-          <IoMdSettings className='setting-icon' />
+          <WorldIcon className='word-icon' />
+          <SettingIcon className='setting-icon' />
           <a className='connect' href='/'>
             Connect Wallet
           </a>

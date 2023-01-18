@@ -1,9 +1,12 @@
+.navbar{
+ position: sticky;
+}
 .nav-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 10px 30px;
-  background: #3f7327cf;
+  background: #732C02;
 }
 
 .nav-link {
@@ -40,7 +43,7 @@
   display: inline-block;
   padding: 5px 10px;
   color: #ffff;
-  border-radius: 8px;
+  border-radius: 20px;
 }
 
 .word-icon,
@@ -59,7 +62,15 @@
   display: none;
 }
 
+.setting-icon path, .word-icon path{
+ fill: #bf6d0a;
+}
+
 @media screen and (max-width: 835px) {
+
+  .logo{
+   font-size: 14px;
+  }
   .nav-wrapper {
     padding: 10px 10px;
   }
@@ -73,13 +84,14 @@
   }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     justify-content: space-between;
     bottom: 0;
     left: 0;
     width: 100%;
     padding: 10px 20px;
+    background: #732C02;
   }
 
   .link-icon {

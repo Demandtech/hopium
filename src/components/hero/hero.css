@@ -1,0 +1,76 @@
+.hero {
+  min-height: calc(100vh - 55px);
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.left h1 {
+  font-size: 54px;
+  line-height: 1.2;
+  color: #f2bb13;
+}
+
+.left p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+}
+
+.btns a {
+  display: inline-block;
+}
+
+.hero-connect {
+  background: #f2bb13;
+  padding: 7px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.hero-trade {
+  border: 2px solid #f2bb13;
+  padding: 7px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #f2bb13;
+}
+
+.right {
+  width: 50%;
+}
+
+@media screen and (max-width: 835px) {
+  .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 45px;
+  }
+}
