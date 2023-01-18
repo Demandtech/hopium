@@ -1,0 +1,122 @@
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal-wrapper {
+  background-color: #000000;
+  width: 420px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #ffffff;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.modal-header h6 {
+  font-size: 20px;
+}
+
+.sect h5 {
+  font-size: 12px;
+  color: #f2bb13;
+  margin: 20px 0;
+}
+
+.sect p {
+  margin-bottom: 15px;
+}
+
+.tooltip {
+  fill: aliceblue;
+}
+
+.global {
+  padding-bottom: 20px;
+  border-bottom: 1.5px solid #3d3d3d;
+}
+
+.global button {
+  border: none;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background: transparent;
+  color: #f2bb13;
+  background: #3d3d3d;
+}
+
+.global-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.swaps h5{
+ padding: 20px 0;
+}
+
+.swaps button {
+  border: none;
+  font-size: 16px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  background: transparent;
+  color: #f2bb13;
+  background: #3d3d3d;
+}
+
+.swaps-btns{
+ display: flex;
+ gap: 10px;
+ margin-bottom: 20px;
+ 
+}
+
+.swaps-btns input{
+ border: 2px solid #3d3d3d;
+ font-size: 16px;
+ color: #f2bb13;
+}
+
+ 
+input{
+  width: 80px;
+  color: #f2bb13;
+  background: #3d3d3d;
+  border-radius: 20px;
+  padding: 5px 25px; 
+}
+
+.percentage{
+ color: #f2bb13;
+}
+
+.modal-row{
+ margin-bottom: 20px;
+}
+
+.deadline{
+ display: flex;
+ justify-content: space-between;
+}
+
+@media screen and (max-width: 835px) {
+  .modal-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-wrapper {
+    width: 100%;
+  }
+
+  input{
+   width:auto
+  }
+}

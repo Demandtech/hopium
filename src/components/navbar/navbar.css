@@ -1,12 +1,15 @@
-.navbar{
- position: sticky;
+:root {
+  --footerBg: #cda61e;
+}
+.navbar {
+  position: sticky;
 }
 .nav-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
   padding: 10px 30px;
-  background: #732C02;
+  background: linear-gradient(#732c02 0%, rgb(94, 4, 4) 100%);
 }
 
 .nav-link {
@@ -62,14 +65,14 @@
   display: none;
 }
 
-.setting-icon path, .word-icon path{
- fill: #bf6d0a;
+.setting-icon path,
+.word-icon path {
+  fill: #bf6d0a;
 }
 
 @media screen and (max-width: 835px) {
-
-  .logo{
-   font-size: 14px;
+  .logo {
+    font-size: 14px;
   }
   .nav-wrapper {
     padding: 10px 10px;
@@ -91,38 +94,37 @@
     left: 0;
     width: 100%;
     padding: 10px 20px;
-    background: #732C02;
+    background: linear-gradient(#732c02 0%, rgb(94, 4, 4) 100%);
+
     border-top: 2px solid #bf6d0a;
   }
 
   .link-icon {
     display: block;
     color: #bf6d0a;
-    
   }
 
-  .nav-link{
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   font-size: 10px;
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
   }
 
-  .link-icon path{
-   fill: #bf6d0a;
+  .link-icon path {
+    fill: #bf6d0a;
   }
 
   .nav-link span {
-   
   }
 
-  .active{
-   background: transparent;
-   color:#f2bb13;
-   padding: 0;
+  .active {
+    background: transparent;
+    color: #f2bb13;
+    padding: 0;
   }
 
-  .active .link-icon path{
-   fill: #f2bb13;
+  .active .link-icon path {
+    fill: #f2bb13;
   }
 }

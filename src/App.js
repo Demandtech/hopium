@@ -6,11 +6,13 @@ import Stake from './pages/Stake';
 import Swap from './pages/Swap';
 import Airdrop from './pages/Airdrop';
 import Footer from './components/footer/Footer';
+import Modal from './components/modal/Modal';
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <Modal />
        <Routes>
            <Route  index path='/' element={<Home />}/>
            <Route  path='/swap' element={<Swap />}/>

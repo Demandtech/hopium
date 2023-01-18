@@ -8,6 +8,7 @@
 
 body{
   font-family: 'Poppins';
-  background: #3F7327;
+ /*  background: #3F7327; */
+  background: linear-gradient( #19390a 0%,#3F7327 100%);
   position: relative;
 }
