@@ -13,15 +13,15 @@ function App() {
     <Router>
       <Navbar />
       <Modal />
-       <Routes>
-           <Route  index path='/' element={<Home />}/>
-           <Route  path='/swap' element={<Swap />}/>
-           <Route  path='/stake' element={<Stake />}/>
-           <Route  path='/airdrop' element={<Airdrop />}/>
-       </Routes>
-       <Footer/>
+      <Routes>
+        <Route index path='/' element={<Home />} />
+        <Route path='/swap' element={<Swap />} />
+        <Route path='/stake' element={<Stake />} />
+        <Route path='/airdrop' element={<Airdrop />} />
+      </Routes>
+      <Footer />
     </Router>
-  );
+  )
 }
 
 export default App;

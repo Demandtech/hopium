@@ -1,0 +1,28 @@
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  
+}
+
+.exchange-btn {
+  border: none;
+  padding: 10px 25px;
+  background: transparent;
+  color: #bf6d0a;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.active-btn {
+  color: #f2bb13;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 10px 25px;
+  border-bottom: 3px solid #f2bb13;
+  background: transparent;
+  font-size: 18px;
+  font-weight: 500;
+}

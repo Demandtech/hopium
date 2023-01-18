@@ -1,8 +1,11 @@
 import React from 'react'
+import SwapHeader from '../components/swapheader/SwapHeader'
 
 function Swap() {
   return (
-    <div>Swap</div>
+    <>
+      <SwapHeader />
+    </>
   )
 }
 

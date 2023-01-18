@@ -4,6 +4,7 @@ const AppContext = React.createContext()
 
 const AppProvider = ({ children }) => {
   const [isModalOpen, setModalOpen] = useState(false)
+  const [rotate, setRotate] = useState(false)
   
   const openModal = () => {
     setModalOpen(true)
@@ -13,9 +14,13 @@ const AppProvider = ({ children }) => {
     setModalOpen(false)
   }
 
+  const handleRotate = ()=>{
+    setRotate(!rotate)
+  }
+
 
   return (
-    <AppContext.Provider value={{isModalOpen, closeModal, openModal}}>
+    <AppContext.Provider value={{isModalOpen , rotate, closeModal, openModal, handleRotate}}>
       {children}
     </AppContext.Provider>
   )
