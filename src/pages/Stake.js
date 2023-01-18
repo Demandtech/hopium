@@ -1,11 +1,12 @@
 import React from 'react'
-import StakeHero from '../components/staking/StakeHero'
+
+import Index from '../components/staking'
 
 function Stake() {
   document.title = 'Stake || Hopium'
   return (
     <>
-      <StakeHero />
+      <Index />
     </>
   )
 }
