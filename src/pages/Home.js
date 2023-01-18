@@ -7,6 +7,7 @@ import Start from '../components/start/Start'
 
 
 function home() {
+  document.title = 'Home || Hopium'
   return (
     <>
       <Hero />

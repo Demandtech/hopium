@@ -46,6 +46,11 @@
  padding: 20px 0;
 }
 
+.from, .to{
+ background: linear-gradient(45deg, #333333 0%, #000000 100% );
+ padding: 0 5px;
+}
+
 .from p, .to p{
  color: #f2bb13;
  margin-bottom: 10px;
@@ -89,6 +94,22 @@
   color: aliceblue;
   text-decoration: none;
   font-size: 16px;
+}
+
+.select{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.select span{
+  color: aliceblue;
+
+}
+
+
+.accord-down{
+  fill: aliceblue
 }
 
 @media screen and (max-width:480px) {

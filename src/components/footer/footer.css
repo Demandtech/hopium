@@ -12,19 +12,22 @@ footer {
 
 .icon,
 .world-icon {
-  fill: #bf6d0a;
+  /* fill: #bf6d0a; */
+  fill: #F49D1A;
   font-size: 22px;
 }
 
 .left-footer {
   display: flex;
   align-items: center;
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+   color: #F49D1A;
   gap: 5px;
 }
 
 .left-footer span {
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+   color: #F49D1A;
 }
 
 .social {
@@ -55,17 +58,20 @@ footer {
 }
 
 .right-footer span {
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+   color: #F49D1A;
   font-weight: 500;
 }
 
 .center-footer {
   align-self: flex-end;
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+   color: #F49D1A;
 }
 
 .copyright {
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+   color: #F49D1A;
   text-align: center;
 }
 

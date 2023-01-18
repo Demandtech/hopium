@@ -2,8 +2,12 @@ import React, { useState } from 'react'
 import { ReactComponent as SettingIcon } from '../../images/setting-icon.svg'
 import { ReactComponent as RecentIcon } from '../../images/recent-icon.svg'
 import { ReactComponent as ArrowDown } from '../../images/arrowdown.svg'
+import { ReactComponent as AccordDown } from '../../images/accor-down.svg'
 import './exchange.css'
 import { useGlobalContext } from '../../context'
+import bnb from '../../images/belt.png'
+import smallLogo from '../../images/logo-small.png'
+
 
 function Exchange() {
   const {openModal, rotate, handleRotate} = useGlobalContext()
@@ -27,11 +31,11 @@ function Exchange() {
               <div>
                 <span>0.0</span>
               </div>
-              <select name='from' id=''>
-                <option value=''>
-                  <p>BELT</p>
-                </option>
-              </select>
+              <div className='select'>
+                <img src={bnb} alt='' width='20px' />
+                <span>BELT</span>
+                <AccordDown className='accord-down' />
+              </div>
             </div>
           </div>
           <div className='arrow-wrapper'>
@@ -43,11 +47,11 @@ function Exchange() {
               <div>
                 <span>0.0</span>
               </div>
-              <select name='from' id=''>
-                <option value=''>
-                  <p>BUSD</p>
-                </option>
-              </select>
+              <div className='select'>
+                <img src={smallLogo} alt='' width='20px' />
+                <span>Hop</span>
+                <AccordDown className='accord-down' />
+              </div>
             </div>
           </div>
         </div>
@@ -55,7 +59,9 @@ function Exchange() {
           <h6>Slippage Tolerance</h6>
           <span>1%</span>
         </div>
-        <a className='exchange-wallet-btn' href="/">Connect Wallet</a>
+        <a className='exchange-wallet-btn' href='/'>
+          Connect Wallet
+        </a>
       </div>
     </section>
   )

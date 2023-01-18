@@ -15,7 +15,8 @@
 
 .nav-link {
   text-decoration: none;
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+  color: #F49D1A;
 }
 
 .nav-right {
@@ -23,7 +24,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #bf6d0a;
+  /* color: #bf6d0a; */
+  color: #F49D1A;
 }
 
 .nav-right span {
@@ -34,6 +36,7 @@
   text-decoration: none;
   margin-right: 40px;
   color: #f2bb13;
+ 
 }
 
 .nav-list {
@@ -70,7 +73,8 @@
 
 .setting-icon path,
 .word-icon path {
-  fill: #bf6d0a;
+  /* fill: #bf6d0a; */
+  fill:  #F49D1A;;
 }
 
 @media screen and (max-width: 835px) {
@@ -107,7 +111,8 @@
 
   .link-icon {
     display: block;
-    color: #bf6d0a;
+    /* color: #bf6d0a; */
+     color: #F49D1A;
   }
 
   .nav-link {
@@ -119,6 +124,7 @@
 
   .link-icon path {
     fill: #bf6d0a;
+    fill:  #F49D1A;
   }
 
   .nav-link span {
