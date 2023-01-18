@@ -1,0 +1,41 @@
+.stake-hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+
+.stake-hero-header h2 {
+  font-size: 64px;
+  color: #f2bb13;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.stake-hero-header p {
+  font-size: 20px;
+  color: #bf6d0a;
+}
+
+.help a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 10px 15px;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 480px) {
+  .stake-hero-header {
+    padding: 50px 25px;
+    align-items: flex-start;
+  }
+
+  .stake-hero-header h2{
+   font-size: 40px;
+  }
+}
