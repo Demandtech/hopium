@@ -8,7 +8,7 @@ import { useGlobalContext } from '../../context'
 function Exchange() {
   const {openModal, rotate, handleRotate} = useGlobalContext()
   return (
-    <section>
+    <section className='exchange'>
       <div className='exchange-wrapper'>
         <div className='exchange-header'>
           <div className='exchange-header-left'>

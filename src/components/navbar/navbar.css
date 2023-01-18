@@ -3,6 +3,7 @@
 }
 .navbar {
   position: sticky;
+  width: 100%;
 }
 .nav-wrapper {
   display: flex;
@@ -73,6 +74,9 @@
 }
 
 @media screen and (max-width: 835px) {
+  .navbar{
+    width: 100%;
+  }
   .logo {
     font-size: 14px;
   }
