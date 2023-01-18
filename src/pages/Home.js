@@ -1,10 +1,19 @@
 import React from 'react'
 import Hero from '../components/hero/Hero'
+import Swap from '../components/swap/Swap'
+import Stake from '../components/stake/Stake'
+import Hopium from '../components/hopium/Hopium'
+import Start from '../components/start/Start'
+
 
 function home() {
   return (
     <>
       <Hero />
+      <Swap />
+      <Stake />
+      <Hopium />
+      <Start />
     </>
   )
 }

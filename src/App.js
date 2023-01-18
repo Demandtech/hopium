@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Stake from './pages/Stake';
 import Swap from './pages/Swap';
 import Airdrop from './pages/Airdrop';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
            <Route  path='/stake' element={<Stake />}/>
            <Route  path='/airdrop' element={<Airdrop />}/>
        </Routes>
+       <Footer/>
     </Router>
   );
 }

@@ -1,0 +1,111 @@
+.hopium-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.left-swap {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-swap h2 {
+  font-size: 45px;
+  line-height: 1.2;
+  color: #f2bb13;
+}
+
+.left-swap h2 span {
+  color: #bf6d0a;
+}
+
+.left-swap p {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.right-swap {
+  width: 50%;
+}
+
+.swap-btns {
+  display: flex;
+  gap: 20px;
+}
+
+.swap-btns a {
+  text-decoration: none;
+  padding: 7px 15px;
+}
+
+.swap-btn {
+  background: #f2bb13;
+  border-radius: 12px;
+  color: aliceblue;
+}
+
+.learn-btn {
+  color: #f2bb13;
+}
+
+.market {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 0 100px;
+}
+
+.market-wrapper {
+  flex: 1;
+}
+
+.market-wrapper h4 {
+  font-size: 24px;
+  color: #f2bb13;
+}
+
+.market-wrapper p {
+  color: aliceblue;
+}
+
+.hopium {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 835px) {
+  .hopium {
+    padding-bottom: 50px;
+  }
+  .hopium-wrapper {
+    flex-direction: column-reverse;
+    padding: 0 30px;
+  }
+
+  .left-swap {
+    width: 100%;
+  }
+
+  .left-swap h2 {
+    font-size: 30px;
+  }
+
+  .right-swap {
+    width: 100%;
+  }
+
+  .left-swap p {
+    font-size: 16px;
+  }
+  .market {
+    margin-top: 20px;
+    padding: 0 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .market-wrapper h4{
+   font-size: 18px;
+  }
+}

@@ -19,7 +19,7 @@ function Navbar() {
         <ul className='nav-list'>
           <NavLink className='nav-link' to={'/swap'}>
             <SwapIcon className='link-icon' />
-            <span className='swap'>Swap</span>
+            <span className='s'>Swap</span>
           </NavLink>
           <NavLink className='nav-link' to={'/stake'}>
             <StakeIcon className='link-icon' />

@@ -92,6 +92,7 @@
     width: 100%;
     padding: 10px 20px;
     background: #732C02;
+    border-top: 2px solid #bf6d0a;
   }
 
   .link-icon {
