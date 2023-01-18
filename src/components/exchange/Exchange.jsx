@@ -8,22 +8,14 @@ import { useGlobalContext } from '../../context'
 import bnb from '../../images/belt.png'
 import smallLogo from '../../images/logo-small.png'
 
-
 function Exchange() {
-  const {openModal, rotate, handleRotate} = useGlobalContext()
+  const {rotate, handleRotate } = useGlobalContext()
   return (
     <section className='exchange'>
       <div className='exchange-wrapper'>
-        <div className='exchange-header'>
-          <div className='exchange-header-left'>
-            <h4>Exchange</h4>
-            <p>Swap BSC tokens instantly</p>
-          </div>
-          <div className='setting-wrapper'>
-            <SettingIcon className='ex-setting-icon' onClick={openModal} />
-            <RecentIcon className='ex-recent-icon' />
-          </div>
-        </div>
+        <HeaderSwap
+          content={{ title: 'Exchange', subtitle: 'Swap BSC tokens instantly' }}
+        />
         <div className={`${rotate ? 'column-reverse' : 'exchange-content'}`}>
           <div className='from'>
             <p>From</p>
@@ -64,6 +56,24 @@ function Exchange() {
         </a>
       </div>
     </section>
+  )
+}
+
+export const HeaderSwap = ({content}) => {
+  const { openModal} = useGlobalContext()
+  return (
+    <>
+      <div className={'exchange-header'}>
+        <div className={'header-wrap'}>
+          <h4>{content.title}</h4>
+          <p>{content.subtitle}</p>
+        </div>
+        <div className='setting-wrapper'>
+          <SettingIcon className='ex-setting-icon' onClick={openModal} />
+          <RecentIcon className='ex-recent-icon' />
+        </div>
+      </div>
+    </>
   )
 }
 

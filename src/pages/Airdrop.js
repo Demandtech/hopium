@@ -1,9 +1,13 @@
 import React from 'react'
+import Airdrop from '../components/airdrop/Drop';
 
-function Airdrop() {
+
+const Drop = ()=>{
   return (
-    <div>Airdrop</div>
+    <>
+      <Airdrop />
+    </>
   )
 }
 
-export default Airdrop
+export default Drop

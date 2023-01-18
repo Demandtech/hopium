@@ -1,0 +1,39 @@
+.liquidity-wrapper{
+ width: 420px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #000000;
+  border-radius: 25px;
+}
+
+.liquidity-content {
+ padding: 25px 0;
+ border-bottom: 2px solid #3d3d3d;
+}
+
+.liquidity-content p{
+ color: #bf6d0a;
+ text-align: center;
+}
+
+.liquidity-btn{
+ margin-top: 25px;
+}
+
+.liquidity-btn button{
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ border: none;
+ width: 100%;
+ padding: 15px 0;
+ font-size: 16px;
+ gap: 5px;
+ background: #f2bb13;
+ color: aliceblue;
+ border-radius: 12px;
+}
+
+.plus-icon{
+ fill: aliceblue;
+}

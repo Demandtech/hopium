@@ -26,3 +26,7 @@
   font-size: 18px;
   font-weight: 500;
 }
+
+.swap-section{
+  min-height: calc(100vh - 200px);
+}

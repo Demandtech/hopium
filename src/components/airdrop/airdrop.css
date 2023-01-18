@@ -1,0 +1,137 @@
+.drop-wrapper{
+ width: 420px;
+ margin: 40px auto;
+ background: #000;
+ border-radius: 20px;
+ padding-bottom: 20px;
+}
+
+.counter-wrapper{
+ display: flex;
+ text-align: center;
+ justify-content: center;
+ gap: 20px;
+ 
+}
+
+.center{
+ padding: 30px;
+}
+.center h4{
+ text-align: center;
+ color: #FBBB13;
+ font-weight: 600;
+ letter-spacing: 1px;
+ font-size: 22px;
+ margin-bottom: 25px;
+ 
+}
+
+.counter{
+  color: #bf6d0a;
+}
+
+.counter span{
+ font-size: 20px;
+ font-weight: 500;
+ display: block;
+ 
+}
+
+.top{
+ padding: 25px;
+ border-bottom: 1.5px solid #3d3d3d;
+}
+
+.top h5{
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.top p{
+ color: #F49D1A;
+ font-size: 1rem;
+}
+
+.bottom{
+ border: 1.5px solid #3d3d3d;
+ border-radius: 12px;
+ padding: 10px;
+ color: #bf6d0a;
+ margin: 0 15px;
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.bottom div{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.total span, .receive span, .whitelisted span{
+ font-size: 14px;
+}
+
+.total p {
+ font-size: 14px;
+}
+
+.form{
+ width: 100%;
+ padding: 15px ;
+}
+ 
+.form label {
+ color: #F49D1A;
+ padding-bottom: 10px;
+ display: block;
+}
+
+.form-control{
+ display: flex;
+ min-width: max-content;
+ 
+}
+
+.inputel{
+ width: 80%;
+}
+
+.inputel input{
+ width: 100%;
+ background: transparent;
+ border: none;
+ padding: 10px;
+ color: aliceblue;
+}
+
+.button{
+ width: 20%;
+}
+
+.button button{
+ width: 100%;
+ text-align: center;
+ background: transparent;
+ border: none;
+ font-size: 16px;
+ border: 3px solid #bf6d0a;
+ color: aliceblue;
+ padding: 5px 0;
+ outline: 2px solid  #F49D1A;
+}
+
+@media screen and (max-width: 480px) {
+  .drop-wrapper{
+   width: 100%;
+   
+  }
+
+  .airdrop{
+   padding: 0 15px;
+  }
+}

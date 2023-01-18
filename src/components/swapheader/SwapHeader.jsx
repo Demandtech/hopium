@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import './swapheader.css'
 import Exchange from '../exchange/Exchange'
+import Liquidity from '../liquidity/Liquidity'
 
 function SwapHeader() {
   const [exchange, setExchange] = useState(true)
@@ -27,8 +28,8 @@ function SwapHeader() {
           </div>
         </div>
       </header>
-      <section>
-        {exchange ? <Exchange/> : ''}
+      <section className='swap-section'>
+        {exchange ? <Exchange/> : <Liquidity />}
       </section>
     </>
   )
