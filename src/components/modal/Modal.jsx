@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { ReactComponent as Tooltip } from '../../images/tooltip.svg'
 import 'react-tooltip/dist/react-tooltip.css'
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import './modal.css'
-
+import { useGlobalContext } from '../../context'
 
 function Modal() {
+  const { closeModal, isModalOpen } = useGlobalContext()
+  const [flipToggle, setFlipToggle] = useState(false)
+  
   return (
-    <div className='modal'>
+    isModalOpen && <div className='modal'>
       <div className='modal-wrapper'>
         <div className='modal-header'>
           <h6>Settings</h6>
-          <FaTimes />
+          <FaTimes  onClick={closeModal} className='close-btn'/>
         </div>
         <div className='global sect'>
           <h5>GLOBAL</h5>
@@ -46,10 +49,16 @@ function Modal() {
           />
 
           <div className='swaps-btns'>
-            <button className='button'>0.1%</button>
-            <button className='button'>0.5%</button>
-            <button className='button'>1.0%</button>
-            <div>
+            <div className='submit-btn'>
+              <input type='submit' value='0.10' />
+            </div>
+            <div className='submit-btn'>
+              <input type='submit' value='0.5%' />
+            </div>
+            <div className='submit-btn'>
+              <input type='submit' value='1.0%' />
+            </div>
+            <div className='random'>
               <input className='button' placeholder='1.0' type='text' />
               <span className='percentage'> %</span>
             </div>
@@ -86,15 +95,29 @@ function Modal() {
             content='Fun sounds to make a truly immersive pancake-flipping trading experience'
           />
         </div>
-        <div className='flippy modal-row'>
-          <span>
-            Flippy sounds <Tooltip id='tooltip4'  className='tooltip'/>
-          </span>
-          <ReactTooltip
-            anchorId='tooltip4'
-            place='top'
-            content='Fun sounds to make a truly immersive pancake-flipping trading experience'
-          />
+        <div className='flippy-wrapper'>
+          <div className='flippy modal-row'>
+            <span>
+              Flippy sounds <Tooltip id='tooltip4' className='tooltip' />
+            </span>
+            <ReactTooltip
+              anchorId='tooltip4'
+              place='top'
+              content='Fun sounds to make a truly immersive pancake-flipping trading experience'
+            />
+          </div>
+          <div className='' onClick={() => setFlipToggle(!flipToggle)}>
+            <div
+              className={`${
+                flipToggle ? 'flippy-toggle toggle-flip' : 'flippy-toggle'
+              }`}
+            >
+              <button
+                onClick={() => setFlipToggle(!flipToggle)}
+                className='flippy-toggle-btn'
+              ></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

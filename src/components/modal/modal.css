@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  top: 0;
+  top: 50px;
   width: 100%;
 }
 
@@ -10,6 +10,7 @@
   margin: 0 auto;
   padding: 30px;
   color: #ffffff;
+  border-radius: 30px;
 }
 
 .modal-header {
@@ -51,59 +52,108 @@
   background: #3d3d3d;
 }
 
+.close-btn{
+  cursor: pointer;
+}
+
 .global-btns {
   display: flex;
   gap: 10px;
 }
 
-.swaps h5{
- padding: 20px 0;
+.swaps h5 {
+  padding: 20px 0;
 }
 
-.swaps button {
-  border: none;
+.swaps-btns {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.random {
+  display: flex;
+  align-items: center;
+}
+
+.random input {
+  color: #f2bb13;
+  margin-right: 5px;
+  background: #000000;
+  border: 2px solid #3d3d3d;
+}
+
+.swaps-btns div {
+  flex: 1;
+}
+
+.swaps-btns div input {
+  width: 100%;
+  padding: 5px 0;
+  border-radius: 20px;
+ 
   font-size: 16px;
-  padding: 5px 20px;
-  border-radius: 20px;
-  background: transparent;
-  color: #f2bb13;
+  padding-left: 10px;
+}
+
+.swaps-btns input[type= 'submit'] {
   background: #3d3d3d;
-}
-
-.swaps-btns{
- display: flex;
- gap: 10px;
- margin-bottom: 20px;
- 
-}
-
-.swaps-btns input{
- border: 2px solid #3d3d3d;
- font-size: 16px;
- color: #f2bb13;
-}
-
- 
-input{
-  width: 80px;
   color: #f2bb13;
-  background: #3d3d3d;
+   border: none;
+  
+}
+
+.percentage {
+  color: #f2bb13;
+}
+
+.modal-row {
+  margin-bottom: 20px;
+}
+
+.deadline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flippy-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flippy-toggle{
+  background: #f2bb13; 
+  height: 32px;
   border-radius: 20px;
-  padding: 5px 25px; 
+  width: 60px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.percentage{
- color: #f2bb13;
+.flippy-toggle-btn{
+   background: #3d3d3d;
+   position: absolute;
+   left: 0;
+   width: 30px;
+   height: 100%;
+   border-radius: 50%;
+   scale: 0.8;
+   transition: 0.3s;
+   cursor: pointer;
 }
 
-.modal-row{
- margin-bottom: 20px;
+.toggle-flip .flippy-toggle-btn{
+  left: 30px;
+  border: 2px solid #f2bb13;
 }
 
-.deadline{
- display: flex;
- justify-content: space-between;
+.toggle-flip.flippy-toggle{
+  background: #000000; 
 }
+
+
 
 @media screen and (max-width: 835px) {
   .modal-wrapper {
@@ -116,7 +166,11 @@ input{
     width: 100%;
   }
 
-  input{
-   width:auto
+  input {
+    width: auto;
+  }
+
+  .global button {
+    font-size: 12px;
   }
 }
