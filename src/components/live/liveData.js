@@ -1,0 +1,43 @@
+import smallLogo from '../../images/logo-small.png'
+const data = [
+  {
+    id: 1,
+    name: 'Manual NFTG',
+    plan: 'Earn NFTG stake NFTG',
+    NFTGEarned: ['0.0', '0 USD'],
+    APR: '6.93%',
+    totalStaked: '52,666,340 NFTG',
+    endsIn: '',
+    img: smallLogo,
+  },
+  {
+    id: 2,
+    name: 'Manual NFTG',
+    plan: 'Earn NFTG stake NFTG',
+    NFTGEarned: ['0.0', '0 USD'],
+    APR: '6.93%',
+    totalStaked: '52,666,340 NFTG',
+    endsIn: '1,077,715 blocks',
+    img: smallLogo,
+  },
+  {
+    id: 3,
+    name: 'Manual NFTG',
+    plan: 'Earn NFTG stake NFTG',
+    NFTGEarned: ['0.0', '0 USD'],
+    APR: '6.93%',
+    totalStaked: '52,666,340 NFTG',
+    endsIn: '',
+    img: smallLogo,
+  },
+  {
+    id: 4,
+    name: 'Manual NFTG',
+    plan: 'Earn NFTG stake NFTG',
+    NFTGEarned: ['0.0', '0 USD'],
+    APR: '6.93%',
+    totalStaked: '52,666,340 NFTG',
+    endsIn: '',
+    img: smallLogo,
+  },
+]

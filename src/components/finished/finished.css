@@ -15,6 +15,10 @@
  color: #bf6d0A;
 }
 
+.to-top{
+  margin-top: 40px;
+}
+
 .to-top button {
   border-right: 2px solid #3d3d3d;
   border-top: 2px solid #3d3d3d;
