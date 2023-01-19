@@ -1,68 +1,196 @@
-.stake-head{
- background: #000000;
+.stake-head {
+  background: #000000;
+  padding-bottom: 50px;
 }
-.head-wrapper{
- display: flex;
- justify-content: space-between;
- padding: 20px 100px;
-}
-
-.right-head{
- display: flex;
- align-items: center;
- color: aliceblue;
+.head-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
 }
 
-.head-tab{
- display: flex;
- border:  1px solid #3d3d3d;
- border-radius: 40px;
+.right-head {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
 }
 
-.head-tab button{
- padding: 7px 15px;
- background: transparent;
- border: none;
- font-size: 16px;
- font-weight: 500;
- letter-spacing: 1px;
- color: #bf6d0a;
- 
+.head-tab {
+  display: flex;
+  border: 1px solid #3d3d3d;
+  border-radius: 40px;
 }
 
-.left-head{
- display: flex;
+.head-tab button {
+  padding: 7px 15px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #bf6d0a;
+  transition:  .5s;
+  border-radius: 20px;
 }
 
-.left-head label{
- display: block;
- color: aliceblue;
- font-size: 12px;
- color: #bf6d0a;
- font-weight: 500;
+.left-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.list, .grid {
- fill:  #bf6d0a;
-
+.left-head label {
+  display: block;
+  font-size: 12px;
+  color: #bf6d0a;
+  font-weight: 500;
+  padding-bottom: 3px;
 }
 
-.views-btn{
- display: flex;
- gap: 10px;
- margin-right: 50px;
+.list,
+.grid {
+  fill: #bf6d0a;
 }
 
-.staked-only{
+.select-wrapper {
+  /* padding: 5px; */
+  background: #000000;
+  color: #bf6d0a;
+  font-size: 16px;
+}
+
+.select-control {
+  position: relative;
+}
+
+.views-btn {
+  display: flex;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.staked-only {
   margin: 0 20px;
   color: #bf6d0a;
 }
 
+.selector {
+  color: #f49d18;
+  height: 40px;
+  border: 1.5px solid #3d3d3d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+  padding: 0 15px;
+  border-radius: 15px;
+}
+
+/* When Option is Open */
+.selector-option-open {
+  border-radius: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: border-radius 0.15s ease 0s;
+}
+
+.select-icon {
+  fill:  #f49d18;
+}
+
+.option-wrapper {
+  position: absolute;
+  background: #000000;
+  left: 0;
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  border-right: 1.5px solid #3d3d3d;
+  border-left: 1.5px solid #3d3d3d;
+  border-bottom: 1.5px solid #3d3d3d;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+  transform: scaleY(0);
+  opacity: 0;
+  transform-origin: center top;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.open-option {
+  height: 135px;
+  transform: scaleY(1);
+  opacity: 1;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+}
+
+.option-wrapper ul {
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+}
+
+.options {
+  
+}
+
+.options li {
+  color: #f49d1A;
+  list-style-type: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: hover 0.15s ease 0s;
+}
+
+.options li:hover{
+  background-color: #3d3d3d;
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
+}
+
+.search-input input:focus {
+   border: 2px solid #bf6d0a;
+  outline: 2px solid #19390a;
+}
+
+.search-input input{
+  height: 40px;
+  border: 1.5px solid #3d3d3d;
+  border-radius: 15px;
+  background: #000000;
+  padding-left: 10px;
+  font-size: 16px;
+  color: #f49d1A;
+}
+
+.search-input input::placeholder{
+  color: #492c0a;
+}
+
+.active-head-tab{
+  background: aliceblue !important;
+  border-radius: 20px;
+  color: #f49d1A;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 835px) {
-  .head-wrapper{
-   padding: 20px 30px;
-   flex-wrap: wrap;
+  .head-wrapper {
+    padding: 20px 30px;
+    flex-wrap: wrap;
   }
 
+  .left-head, .right-head{
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
 
+  .selector{
+    width: 100%;
+  }
+}
+
+.text {
+  transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
 }

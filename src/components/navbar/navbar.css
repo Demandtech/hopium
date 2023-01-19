@@ -36,7 +36,6 @@
   text-decoration: none;
   margin-right: 40px;
   color: #f2bb13;
- 
 }
 
 .nav-list {
@@ -81,16 +80,15 @@
   .navbar{
     width: 100%;
   }
-  .logo {
-    font-size: 14px;
+  .logo { 
+    margin-right: 15px;
   }
+
   .nav-wrapper {
     padding: 10px 10px;
   }
 
-  .logo {
-    margin-right: 15px;
-  }
+  
 
   .nav-right {
     gap: 5px;
@@ -138,5 +136,11 @@
 
   .active .link-icon path {
     fill: #f2bb13;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo h2{
+    font-size: 16px;
   }
 }
