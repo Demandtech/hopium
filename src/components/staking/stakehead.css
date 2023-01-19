@@ -1,11 +1,12 @@
 .stake-head {
   background: #000000;
-  padding-bottom: 50px;
+  padding: 50px 20px; 
 }
 .head-wrapper {
   display: flex;
   justify-content: space-between;
   padding: 20px 100px;
+  margin-bottom: 20px;
 }
 
 .right-head {
@@ -28,7 +29,7 @@
   font-weight: 500;
   letter-spacing: 1px;
   color: #bf6d0a;
-  transition:  .5s;
+  transition: 0.5s;
   border-radius: 20px;
 }
 
@@ -96,7 +97,7 @@
 }
 
 .select-icon {
-  fill:  #f49d18;
+  fill: #f49d18;
 }
 
 .option-wrapper {
@@ -131,63 +132,98 @@
 }
 
 .options {
-  
 }
 
 .options li {
-  color: #f49d1A;
+  color: #f49d1a;
   list-style-type: none;
   cursor: pointer;
   padding: 10px;
   transition: hover 0.15s ease 0s;
 }
 
-.options li:hover{
+.options li:hover {
   background-color: #3d3d3d;
   transition: transform 0.15s ease 0s, opacity 0.15s ease 0s;
 }
 
 .search-input input:focus {
-   border: 2px solid #bf6d0a;
+  border: 2px solid #bf6d0a;
   outline: 2px solid #19390a;
 }
 
-.search-input input{
+.search-input input {
   height: 40px;
   border: 1.5px solid #3d3d3d;
   border-radius: 15px;
   background: #000000;
   padding-left: 10px;
   font-size: 16px;
-  color: #f49d1A;
+  color: #f49d1a;
 }
 
-.search-input input::placeholder{
+.search-input input::placeholder {
   color: #492c0a;
 }
 
-.active-head-tab{
-  background: aliceblue !important;
+.active-head-tab {
+  background: #f1bb13 !important;
   border-radius: 20px;
-  color: #f49d1A;
+  color: aliceblue !important;
   font-weight: 500;
 }
 
 @media screen and (max-width: 835px) {
   .head-wrapper {
-    padding: 20px 30px;
+    padding: 0 0 20px 0;
     flex-wrap: wrap;
+    
   }
 
-  .left-head, .right-head{
+  .right-head {
     width: 100%;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
     margin-bottom: 10px;
   }
 
-  .selector{
+  .left-head {
     width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .selector {
+    width: 100%;
+  }
+
+  .select-control {
+    width: 100%;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .search-input input {
+    width: 100%;
+  }
+
+  .select-wrapper {
+    width: 100%;
+  }
+
+  .head-tab {
+    width: 100%;
+  }
+
+  .head-tab button{
+    width: 50%;
+  }
+
+  .views-btn{
+    margin-bottom: 15px;
   }
 }
 

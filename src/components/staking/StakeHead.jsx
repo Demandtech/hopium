@@ -32,10 +32,11 @@ function StakeHead() {
           <div className='views-btn'>
             <GridView className='grid' />
             <ListView className='list' />
+            <div className='staked-only'>
+              <p>Staked only</p>
+            </div>
           </div>
-          <div className='staked-only'>
-            <p>Staked only</p>
-          </div>
+
           <div className='head-tab'>
             <button
               className={`${live ? 'active-head-tab' : undefined}`}
