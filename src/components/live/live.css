@@ -5,8 +5,11 @@
 .live-left-header {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
   padding: 15px;
+}
+
+.live-left-header:nth-child(0) {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -31,14 +34,17 @@
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.live-left img {
+  min-width: 200px;
 }
 
 .live-center {
   display: flex;
   gap: 50px;
+  min-width: 300px;
+}
+
+.live-right {
+  min-width: 75px;
 }
 
 .live-center strong,
@@ -72,14 +78,15 @@
 
 .inner-content {
   background: #1e1d20;
-  padding: 20px;
-  border: 1px solid #3d3d3d;
- 
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
 }
 
 .inner-content-wrapper {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
 }
 
 /* .inner-earned{
@@ -98,6 +105,14 @@
 
 .url-icon {
   fill: #f2bb13;
+}
+
+.calc-icon {
+  fill: #f49d1a;
+}
+
+.timer-icon {
+  fill: #f49d1a;
 }
 
 .manual {
@@ -188,8 +203,37 @@
   display: none;
 }
 
-.inner-apr{
- display: none;
+.inner-apr {
+  display: none;
+}
+
+.live-totop {
+  margin: 0;
+}
+
+.All-live-wrapper {
+  border: 1px solid #3d3d3d;
+  border-radius: 20px;
+}
+
+.destop-total-staked {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  min-width: 200px;
+}
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .calc-wrapper{
+  display: flex;
+} */
+
+.end-in {
+  min-width: 170px;
 }
 
 @media screen and (max-width: 835px) {
@@ -206,7 +250,7 @@
     color: #f2bb13;
   }
 
-  .destop-total-staked {
+  .calc-wrapper {
     display: none;
   }
 
@@ -215,8 +259,18 @@
     gap: 10px;
   }
 
-  .inner-left{
-   padding: 20px 0;
+  .inner-left {
+    padding: 20px 0;
+  }
+  .end-in {
+    display: none;
+  }
+  .destop-total-staked {
+    display: none;
+  }
+
+  .live-center {
+    display: none;
   }
 }
 
@@ -225,10 +279,6 @@
     display: none;
   }
   .detail-btn button span {
-    display: none;
-  }
-
-  .end-in {
     display: none;
   }
 
@@ -242,9 +292,9 @@
     color: #f2bb13;
   }
 
-  .inner-apr{
-   display: flex;
-   color: #f2bb13;
-   gap: 5px;
+  .inner-apr {
+    display: flex;
+    color: #f2bb13;
+    gap: 5px;
   }
 }

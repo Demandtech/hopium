@@ -3,7 +3,7 @@ import { ReactComponent as GridView } from '../../images/grid-view.svg'
 import { ReactComponent as ListView } from '../../images/list-view.svg'
 import { ReactComponent as SelectIcon } from '../../images/selector.svg'
 import './stakehead.css'
-import Live from '../live/Live'
+import AllLive from '../live/AllLive'
 import Finished from '../finished/Finished'
 
 function StakeHead() {
@@ -99,7 +99,7 @@ function StakeHead() {
           </div>
         </div>
       </div>
-      <div className='content'>{live ? <Live /> : <Finished />}</div>
+      <div className='content'>{live ? <AllLive /> : <Finished />} </div>
     </div>
   )
 }

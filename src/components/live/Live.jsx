@@ -1,24 +1,40 @@
-import React from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import './live.css'
-import { ToTopButton } from '../finished/Finished'
-import smallLogo from '../../images/logo-small.png'
 import { ReactComponent as AccordDown } from '../../images/accor-down.svg'
 import { ReactComponent as AccordUp } from '../../images/accor-up.svg'
 import { ReactComponent as LinkIcon } from '../../images/link-icon.svg'
 import { ReactComponent as Tooltip } from '../../images/tooltip.svg'
 import { ReactComponent as ManualIcon } from '../../images/manual-icon.svg'
+import { ReactComponent as CalculatorIcon } from '../../images/calculator.svg'
+import { ReactComponent as TimerIcon } from '../../images/timer.svg'
 
-function Live() {
+const Live = ({content}) => {
+  const [isInnerOpen, setIsInnerOpen] = useState(false)
+  const innerWrapperRef = useRef(null)
+  const innerContentRef = useRef(null)
+  
+  console.log(content.name)
+  useEffect(() => {
+    const wrapperHeight = innerWrapperRef.current.getBoundingClientRect().height
+    if (isInnerOpen) {
+      innerContentRef.current.style.height = `${wrapperHeight}px`
+    } else {
+      innerContentRef.current.style.height = '0px'
+    }
+  }, [isInnerOpen])
   return (
     <div className='live'>
       <div className='live-wrapper'>
-        <div className='live-left-header'>
+        <div
+          className='live-left-header'
+          onClick={() => setIsInnerOpen(!isInnerOpen)}
+        >
           <div className='live-left'>
             <div className='live-logo'>
-              <img src={smallLogo} alt='' width={'40px'} />
+              <img src={content.img} alt='' width={'40px'} />
             </div>
             <div>
-              <p>Manual NFTG</p>
+              <p>{content.name}</p>
               <span>Earn NFTG stake NFGTG</span>
             </div>
           </div>
@@ -29,27 +45,47 @@ function Live() {
               <span>0 USD</span>
             </div>
             <div className='destop-total-staked'>
-              <span>Total staked</span>
-              <p>52,666,340 NFTG</p>
+              <CalculatorIcon className='calc-icon' />
+              <div className='calc-wrapper'>
+                <span>Total staked</span>
+                <p>{content.totalStaked}</p>
+              </div>
             </div>
           </div>
           <div className='live-right'>
             <span>APR</span>
-            <p>6.93%</p>
+            <p>{content.APR}</p>
           </div>
           <div className='end-in'>
             <span>End In</span>
-            <p>-</p>
+
+            {content.endsIn ? (
+              <div className='timer'>
+               
+                <p>{content.endsIn}</p>
+                <TimerIcon className='timer-icon' />
+              </div>
+            ) : (
+              <div className='timer'>
+                <p>-</p>
+              </div>
+            )}
           </div>
           <div className='detail-btn'>
             <button>
-              <span>Detail</span>
-              <AccordDown className='acc-down' />
+              <span>{isInnerOpen ? 'Hide' : 'Detail'}</span>
+              <div>
+                {isInnerOpen ? (
+                  <AccordUp className='acc-down' />
+                ) : (
+                  <AccordDown className='acc-down' />
+                )}
+              </div>
             </button>
           </div>
         </div>
-        <div className='inner-content'>
-          <div className='inner-content-wrapper'>
+        <div ref={innerContentRef} className='inner-content'>
+          <div ref={innerWrapperRef} className='inner-content-wrapper'>
             <div className='inner-left inne-card'>
               <div>
                 <a href=''>
@@ -106,7 +142,6 @@ function Live() {
           </div>
         </div>
       </div>
-      <ToTopButton />
     </div>
   )
 }
