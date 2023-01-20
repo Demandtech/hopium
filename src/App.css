@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 *, ::before, ::after {
   padding: 0;
@@ -7,7 +7,7 @@
 }
 
 body{
-  font-family: 'Poppins';
+  font-family: 'Ubuntu';
  /*  background: #3F7327; */
   background: linear-gradient( #19390a 0%,#3F7327 100%);
   position: relative;
