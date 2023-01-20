@@ -53,15 +53,14 @@
   background: #f2bb13;
   text-decoration: none;
   display: inline-block;
-  padding: 5px 10px;
+  padding: 5px 15px;
   color: #ffff;
   border-radius: 20px;
+  transition: .3s
 }
 
-.word-icon,
-.setting-icon {
-  font-size: 20px;
-  cursor: pointer;
+.connect:hover {
+ background: #f2ba13a3
 }
 
 .active {
@@ -74,10 +73,16 @@
   display: none;
 }
 
-.setting-icon path,
-.word-icon path {
-  /* fill: #bf6d0a; */
+.setting-icon,
+.word-icon { 
   fill: #f49d1a;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s
+}
+
+.setting-icon:hover{
+  fill: #bf6d0a;
 }
 
 @media screen and (max-width: 835px) {
@@ -138,5 +143,9 @@
 @media screen and (max-width: 480px) {
   .logo h2 {
     font-size: 16px;
+  }
+
+  .connect{
+    padding: 5px 10px;
   }
 }

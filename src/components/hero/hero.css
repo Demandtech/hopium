@@ -44,6 +44,14 @@
   border-radius: 8px;
   text-decoration: none;
   color: aliceblue;
+  border : 2px solid #f2bb13;
+  transition: 0.5s
+}
+
+.hero-connect:hover{
+  background: transparent;
+  color: #f2bb13;
+  
 }
 
 .hero-trade {
@@ -52,6 +60,12 @@
   border-radius: 8px;
   text-decoration: none;
   color: #f2bb13;
+  transition: .5s;
+}
+
+.hero-trade:hover{
+  color: aliceblue;
+  background: #f2bb13;
 }
 
 .right {
