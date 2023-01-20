@@ -17,7 +17,7 @@ const data = [
   {
     id: 2,
     name: 'Silver SURV',
-    plan: 'Earn NFTG stake NFTG',
+    plan: 'Stake $SURV for 1 year',
     NFTGEarned: ['0.0', '0 USD'],
     APR: '50.00%',
     totalStaked: '1,340,130,206 SURV',
@@ -27,7 +27,7 @@ const data = [
   {
     id: 3,
     name: 'Gold SURV',
-    plan: 'Earn NFTG stake NFTG',
+    plan: 'Stake $SURV for 2 years',
     NFTGEarned: ['0.0', '0 USD'],
     APR: '300.00%',
     totalStaked: '774,991,285 SURV',
@@ -37,7 +37,7 @@ const data = [
   {
     id: 4,
     name: 'Diamond SURV',
-    plan: 'Earn NFTG stake NFTG',
+    plan: 'Earn $SURV stake $SURV',
     NFTGEarned: ['0.0', '0 USD'],
     APR: '1,000.00%',
     totalStaked: '9,693,975,393 SURV',

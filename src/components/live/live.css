@@ -18,7 +18,8 @@
   font-size: 12px;
   color: #aa6b0e;
   display: block;
-  line-height: 0.5;
+  line-height: 1;
+
 }
 
 .live-left-header p {
@@ -69,6 +70,8 @@
 .detail-btn button span {
   color: #bb1111;
   font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .acc-down,

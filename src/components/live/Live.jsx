@@ -35,7 +35,7 @@ const Live = ({content}) => {
             </div>
             <div>
               <p>{content.name}</p>
-              <span>Earn NFTG stake NFGTG</span>
+              <span>{content.plan}</span>
             </div>
           </div>
           <div className='live-center'>
@@ -73,7 +73,7 @@ const Live = ({content}) => {
           </div>
           <div className='detail-btn'>
             <button>
-              <span>{isInnerOpen ? 'Hide' : 'Detail'}</span>
+              <span>{isInnerOpen ? 'Hide' : 'Details'}</span>
               <div>
                 {isInnerOpen ? (
                   <AccordUp className='acc-down' />
