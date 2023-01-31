@@ -12,10 +12,12 @@ const Live = ({content}) => {
   const [isInnerOpen, setIsInnerOpen] = useState(false)
   const innerWrapperRef = useRef(null)
   const innerContentRef = useRef(null)
+
   
-  console.log(content.name)
+  
   useEffect(() => {
     const wrapperHeight = innerWrapperRef.current.getBoundingClientRect().height
+   
     if (isInnerOpen) {
       innerContentRef.current.style.height = `${wrapperHeight}px`
     } else {
